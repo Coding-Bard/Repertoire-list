@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+  <title>Repertoir List</title>
+
+  <style>
+    .alert {
+      padding: .5em;
+      color: white;
+      margin: 1em 0;
+    }
+
+    .error {
+      background: red;
+    }
+
+    .success {
+      background: green;
+    }
+
+    .danger {
+      background: orange;
+      color: black;
+    }
+
+    hr {
+      margin: 1em 0;
+    }
+
+    p {
+      margin: 0;
+    }
+  </style>
+
+
+</head>
+<body>
+
+  <div class="container">
+      <div class="row">
+          <h2>Repertoire List</h2>
+        </div>
+      <hr>
+        <div class="row">
+          <div class="button btnDuration">Get Playlist Duration</div>
+          <p class="durationOutput">Total Duration:</p>
+        </div>
+<hr>
+        <form id="song-form">
+          <div class="row">
+            <label for="song">Song Name</label>
+            <input type="text" class="song u-full-width">
+          </div>
+          <div class="row">
+            <label for="author">Author</label>
+            <input type="text" class="author u-full-width">
+          </div>
+          <label for="duration">Duration</label>
+          <div class="row">
+            <div class="three columns">
+              <input type="text" class="minutes u-full-width" placeholder="Minutes...">
+            </div>
+            <div class="three columns">
+                <input type="text" class="seconds u-full-width" placeholder="Seconds..">
+              </div>
+          </div>
+
+          <input type="submit" value="Submit" class="button">
+        </form>
+
+      
+
+      <table class="u-full-width">
+        <thead>
+          <tr>
+            <th>Song</th>
+            <th>Author</th>
+            <th>Duration</th>
+          </tr>
+        </thead>
+        <tbody class="song-list">
+          
+        </tbody>
+      </table>  
+
+
+  </div>
+  
+  <script src="app.js"></script>
+</body>
+</html>
